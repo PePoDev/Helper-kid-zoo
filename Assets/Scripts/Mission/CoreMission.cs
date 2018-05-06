@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class CoreMission : MonoBehaviour {
 	// Variable initial
 	public GameObject Panel;
+	public AudioClip ClickAudio;
 	[Header("Tutorials Settings")]
 	public GameObject PanelTutorials;
 	public GameObject closeTutorials;
@@ -15,12 +16,17 @@ public class CoreMission : MonoBehaviour {
 	public GameObject PanelReady;
 	public Sprite[] spriteReady;
 	public AudioClip[] VoiceReady;
+	[Header("Win Settings")]
+	public GameObject PanelWin;
 
 	// On start scene will call OnLoadTutorials for display tutorials
 	private void Start() => StartCoroutine(OnLoadTutorials());
 
 	// Back to scene map
-	public void backToMap() => SceneManager.LoadScene(Singleton.Scene.Map.ToString());
+	public void backToMap() {
+		AudioSource.PlayClipAtPoint(ClickAudio, new Vector3(0f, 0f, -10f));
+		SceneManager.LoadSceneAsync(Singleton.Scene.Map.ToString());
+	}
 
 	// When clear mission this method will do
 	public void ClearMission(int Mission) {
@@ -34,16 +40,25 @@ public class CoreMission : MonoBehaviour {
 
 	// For hide tutorials and display ready text
 	public void closeTutorial() {
+		AudioSource.PlayClipAtPoint(ClickAudio, new Vector3(0f, 0f, -10f));
 		PanelTutorials.SetActive(false);
 		StartCoroutine(OnLoadReady());
 	}
 
+	// Win text display
+	public void Win() {
+		AudioSource.PlayClipAtPoint(ClickAudio, new Vector3(0f, 0f, -10f));
+		Panel.SetActive(true);
+		PanelWin.SetActive(true);
+	}
+
 	// Method for delay to display tutorials in array spriteTutorials[]
 	IEnumerator OnLoadTutorials() {
+		yield return new WaitForSeconds(1f);
 		for (int i = 0; i < spriteTutorials.Length;i++) {
 			PanelTutorials.GetComponent<Image>().sprite = spriteTutorials[i];
-			AudioSource.PlayClipAtPoint(VoiceTutorials[i], new Vector3(0f, 0f, 0f));
-			yield return new WaitForSeconds(VoiceTutorials[i].length);
+			AudioSource.PlayClipAtPoint(VoiceTutorials[i], new Vector3(0f, 0f, -10f));
+			yield return new WaitForSeconds(VoiceTutorials[i].length + 1.5f);
 		}
 		closeTutorials.SetActive(true);
 	}
@@ -53,8 +68,8 @@ public class CoreMission : MonoBehaviour {
 		PanelReady.SetActive(true);
 		for (int i = 0; i < spriteReady.Length; i++) {
 			PanelReady.GetComponent<Image>().sprite = spriteReady[i];
-			AudioSource.PlayClipAtPoint(VoiceReady[i],new Vector3(0f,0f,0f));
-			yield return new WaitForSeconds(VoiceReady[i].length + 2f);
+			AudioSource.PlayClipAtPoint(VoiceReady[i],new Vector3(0f,0f,-10f));
+			yield return new WaitForSeconds(VoiceReady[i].length + 1f);
 		}
 		PanelReady.SetActive(false);
 		Panel.SetActive(false);

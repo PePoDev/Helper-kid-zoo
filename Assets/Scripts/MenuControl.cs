@@ -2,11 +2,11 @@
 using UnityEngine.SceneManagement;
 
 public class MenuControl : MonoBehaviour {
-	[SerializeField]
 	// Obj link with tutorials in Menu scene
-	private GameObject tutorial;
+	public  GameObject tutorial;
+	public AudioClip ClickAudio;
 
-	// initial all mission level
+	// Initial all mission level
 	private void Start() {
 		PlayerPrefs.DeleteAll();
 		PlayerPrefs.SetString("MissionLevel0", "play");
@@ -21,16 +21,19 @@ public class MenuControl : MonoBehaviour {
 
 	// On click play button in menu scene
 	public void PlayGame() {
-		SceneManager.LoadScene(Singleton.Scene.Map.ToString());
+		AudioSource.PlayClipAtPoint(ClickAudio, new Vector3(0f, 0f, -10f));
+		SceneManager.LoadSceneAsync(Singleton.Scene.Map.ToString());
 	}
 
 	// On click tutorials in menu scene
 	public void OpenTutorial() {
+		AudioSource.PlayClipAtPoint(ClickAudio, new Vector3(0f, 0f, -10f));
 		tutorial.SetActive(true);
 	}
 
 	// On click close button in menu scene
 	public void CloseTutorial() {
+		AudioSource.PlayClipAtPoint(ClickAudio, new Vector3(0f, 0f, -10f));
 		tutorial.SetActive(false);
 	}
 }

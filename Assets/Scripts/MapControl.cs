@@ -2,12 +2,12 @@
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class MapControl : MonoBehaviour {
-	//
+	// Variable initial
 	public GameObject[] Mission;
 	public Sprite[] MissionPlay,MissionComplate;
 	public AudioClip buttonClick;
 
-	// 
+	// For collect all mission status
 	private string[] levelState;
 
 	// Initial map scene about mission level status
@@ -22,10 +22,12 @@ public class MapControl : MonoBehaviour {
 			}
 		}
 	}
+
+	// On click mission
 	public void PlayMission(int mission) {
 		if (levelState[mission].Equals("play")) {
-			AudioSource.PlayClipAtPoint(buttonClick,Vector3.zero);
-			SceneManager.LoadScene(Singleton.Scene.Mission.ToString() + mission.ToString());
+			AudioSource.PlayClipAtPoint(buttonClick,new Vector3(0f,0f,-10f));
+			SceneManager.LoadSceneAsync(Singleton.Scene.Mission.ToString() + mission.ToString());
 		}
 	}
 }
