@@ -109,6 +109,10 @@ public class Crocodile : MonoBehaviour {
 		CrocodilleGroup[1].SetActive(true);
 	}
 
+	public void FinishStory() {
+
+	}
+
 	// Delay for display lose panel
 	IEnumerator DisplayLosePanel() {
 		MainPanel.SetActive(true);
