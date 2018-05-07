@@ -73,5 +73,6 @@ public class CoreMission : MonoBehaviour {
 		}
 		PanelReady.SetActive(false);
 		Panel.SetActive(false);
+		gameObject.SendMessage("FinishStory");
 	}
 }
