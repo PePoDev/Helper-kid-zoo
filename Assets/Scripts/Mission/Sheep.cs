@@ -19,7 +19,8 @@ public class Sheep : MonoBehaviour {
 	public GameObject PanelReady;
 	public Sprite[] spriteReady;
 	public AudioClip[] VoiceReady;
-	[Header("Win Settings")]
+    [Header("Win Settings")]
+    public AudioClip WinVoice;
 	public GameObject PanelWin;
 
 	public GameObject PanelLose, Group1, Group2;
@@ -57,7 +58,7 @@ public class Sheep : MonoBehaviour {
 
 	// Win text display
 	public void Win() {
-		AudioSource.PlayClipAtPoint(ClickAudio, new Vector3(0f, 0f, -10f));
+		AudioSource.PlayClipAtPoint(WinVoice, new Vector3(0f, 0f, -10f));
 		Panel.SetActive(true);
 		PanelWin.SetActive(true);
 	}
@@ -68,7 +69,7 @@ public class Sheep : MonoBehaviour {
 		for (int i = 0; i < spriteTutorials.Length; i++) {
 			PanelTutorials.GetComponent<Image>().sprite = spriteTutorials[i];
 			AudioSource.PlayClipAtPoint(VoiceTutorials[i], new Vector3(0f, 0f, -10f));
-			yield return new WaitForSeconds(VoiceTutorials[i].length + 1.5f);
+			yield return new WaitForSeconds(VoiceTutorials[i].length + 0.75f);
 		}
 		closeTutorials.SetActive(true);
 	}
@@ -113,7 +114,7 @@ public class Sheep : MonoBehaviour {
 		for (int i = 0; i < spriteReady.Length; i++) {
 			PanelReady.GetComponent<Image>().sprite = spriteReady[i];
 			AudioSource.PlayClipAtPoint(VoiceReady[i], new Vector3(0f, 0f, -10f));
-			yield return new WaitForSeconds(VoiceReady[i].length + 1f);
+			yield return new WaitForSeconds(VoiceReady[i].length + 0.75f);
 		}
 		PanelReady.SetActive(false);
 		Panel.SetActive(false);
@@ -135,7 +136,7 @@ public class Sheep : MonoBehaviour {
 		Panel.SetActive(true);
 		PanelLose.SetActive(true);
 		AudioSource.PlayClipAtPoint(LoseVoice, new Vector3(0f, 0f, -10f));
-		yield return new WaitForSeconds(LoseVoice.length + 0.25f);
+		yield return new WaitForSeconds(LoseVoice.length + 0.75f);
 		Group1.SetActive(false);
 		Group2.SetActive(true);
 		Panel.SetActive(false);

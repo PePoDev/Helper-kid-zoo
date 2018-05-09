@@ -807,8 +807,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a6637efff0d29d746861f184e18a06aa, type: 3}
   - {fileID: 21300000, guid: df5df02d240a2224fb239c33d9bf86b4, type: 3}
   VoiceTutorials:
-  - {fileID: 8300000, guid: efb5a5e79202b9f43ba3623877830b36, type: 3}
-  - {fileID: 8300000, guid: efb5a5e79202b9f43ba3623877830b36, type: 3}
+  - {fileID: 8300000, guid: f9c4b490623f26146ac85e3a8bd19547, type: 3}
+  - {fileID: 8300000, guid: 7f34ec2beec718b40ac001863c6d695a, type: 3}
   SheepPanel: {fileID: 2020027536}
   spriteSheeps:
   - {fileID: 21300000, guid: c8c3054e139a64b4ab364002b070f474, type: 3}
@@ -820,15 +820,16 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 20ee39bb7820d594199a44bdee5ba5bf, type: 3}
   - {fileID: 21300000, guid: 4a92164f7fbe693448e3fb8f5a5fba6f, type: 3}
   VoiceReady:
-  - {fileID: 8300000, guid: efb5a5e79202b9f43ba3623877830b36, type: 3}
-  - {fileID: 8300000, guid: efb5a5e79202b9f43ba3623877830b36, type: 3}
+  - {fileID: 8300000, guid: cf0e7481d5b3fc94fba0628b268d65b5, type: 3}
+  - {fileID: 8300000, guid: d8407cbcc88407340b366d3fe6ce09d7, type: 3}
+  WinVoice: {fileID: 8300000, guid: 6c7dce05758f5974e9162078bf4beb91, type: 3}
   PanelWin: {fileID: 65874419}
   PanelLose: {fileID: 231989252}
   Group1: {fileID: 58640483}
   Group2: {fileID: 536099429}
   AudioCorrect: {fileID: 8300000, guid: b2fefb385e33b984097672e2482b2893, type: 3}
   AudioWorng: {fileID: 8300000, guid: efb5a5e79202b9f43ba3623877830b36, type: 3}
-  LoseVoice: {fileID: 8300000, guid: efb5a5e79202b9f43ba3623877830b36, type: 3}
+  LoseVoice: {fileID: 8300000, guid: 9021f5a7e8a9c7d499ad3477b69c8458, type: 3}
   SheepCorrect: {fileID: 873975618}
   SheepHint: {fileID: 21300000, guid: b69371255bfd07943b964812bd69fb38, type: 3}
 --- !u!1 &741592147
@@ -1173,6 +1174,13 @@ MonoBehaviour:
   Hash2: []
   Hash3:
   - list:
+    - {fileID: 668422230}
+    ActiveGameObject: {fileID: 668422230}
+    GUIDsList: []
+    GUIDsActiveGameObject: 
+    wasInit: 0
+    CashedBool: 0
+  - list:
     - {fileID: 228491658}
     ActiveGameObject: {fileID: 228491658}
     GUIDsList: []
@@ -1203,13 +1211,6 @@ MonoBehaviour:
   - list:
     - {fileID: 65874419}
     ActiveGameObject: {fileID: 65874419}
-    GUIDsList: []
-    GUIDsActiveGameObject: 
-    wasInit: 0
-    CashedBool: 0
-  - list:
-    - {fileID: 668422230}
-    ActiveGameObject: {fileID: 668422230}
     GUIDsList: []
     GUIDsActiveGameObject: 
     wasInit: 0

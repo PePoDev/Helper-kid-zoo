@@ -1188,15 +1188,16 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 4c911b943c7824f4b958f01718e8fe8c, type: 3}
   - {fileID: 21300000, guid: 9c93c0bf545777549a102aeb734ee7d4, type: 3}
   VoiceTutorials:
-  - {fileID: 8300000, guid: efb5a5e79202b9f43ba3623877830b36, type: 3}
-  - {fileID: 8300000, guid: efb5a5e79202b9f43ba3623877830b36, type: 3}
+  - {fileID: 8300000, guid: c5207a78d01e9f742a8f76bdfa6b6e06, type: 3}
+  - {fileID: 8300000, guid: 0042d847b8154e34d9bb261256f5449e, type: 3}
   PanelReady: {fileID: 741592147}
   spriteReady:
   - {fileID: 21300000, guid: 93c1abe6261582c4fbde51be1bf7d591, type: 3}
   - {fileID: 21300000, guid: 68b5476e5872e3e47bb8d53f1153f7b4, type: 3}
   VoiceReady:
-  - {fileID: 8300000, guid: efb5a5e79202b9f43ba3623877830b36, type: 3}
-  - {fileID: 8300000, guid: efb5a5e79202b9f43ba3623877830b36, type: 3}
+  - {fileID: 8300000, guid: 95ffa1859ef763441b0df7f7ec287476, type: 3}
+  - {fileID: 8300000, guid: 3a423144f480a1a4ab05f074a82720a4, type: 3}
+  WinVoice: {fileID: 8300000, guid: e421d85c3d3229442991818e19f4b4f0, type: 3}
   PanelWin: {fileID: 65874419}
 --- !u!114 &668422236
 MonoBehaviour:
@@ -1237,7 +1238,7 @@ MonoBehaviour:
   Story2: {fileID: 21300000, guid: 54d33c00d0c138f4ea4e609d3ddfaff6, type: 3}
   CorrectAudio: {fileID: 8300000, guid: b2fefb385e33b984097672e2482b2893, type: 3}
   WrongAudio: {fileID: 8300000, guid: efb5a5e79202b9f43ba3623877830b36, type: 3}
-  Story2Audio: {fileID: 8300000, guid: efb5a5e79202b9f43ba3623877830b36, type: 3}
+  Story2Audio: {fileID: 8300000, guid: 2f3c41700d433834aab69aad131e6637, type: 3}
 --- !u!1 &741592147
 GameObject:
   m_ObjectHideFlags: 0
@@ -1474,15 +1475,15 @@ MonoBehaviour:
   Hash2: []
   Hash3:
   - list:
-    - {fileID: 1417793347}
-    ActiveGameObject: {fileID: 1417793347}
+    - {fileID: 668422230}
+    ActiveGameObject: {fileID: 668422230}
     GUIDsList: []
     GUIDsActiveGameObject: 
     wasInit: 0
     CashedBool: 0
   - list:
-    - {fileID: 668422230}
-    ActiveGameObject: {fileID: 668422230}
+    - {fileID: 1417793347}
+    ActiveGameObject: {fileID: 1417793347}
     GUIDsList: []
     GUIDsActiveGameObject: 
     wasInit: 0
