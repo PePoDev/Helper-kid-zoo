@@ -405,7 +405,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -477,6 +477,20 @@ MonoBehaviour:
   Hash2: []
   Hash3:
   - list:
+    - {fileID: 758828537}
+    ActiveGameObject: {fileID: 758828537}
+    GUIDsList: []
+    GUIDsActiveGameObject: 
+    wasInit: 0
+    CashedBool: 0
+  - list:
+    - {fileID: 282840810}
+    ActiveGameObject: {fileID: 282840810}
+    GUIDsList: []
+    GUIDsActiveGameObject: 
+    wasInit: 0
+    CashedBool: 0
+  - list:
     - {fileID: 439208450}
     ActiveGameObject: {fileID: 439208450}
     GUIDsList: []
@@ -486,13 +500,6 @@ MonoBehaviour:
   - list:
     - {fileID: 1821473956}
     ActiveGameObject: {fileID: 1821473956}
-    GUIDsList: []
-    GUIDsActiveGameObject: 
-    wasInit: 0
-    CashedBool: 0
-  - list:
-    - {fileID: 282840810}
-    ActiveGameObject: {fileID: 282840810}
     GUIDsList: []
     GUIDsActiveGameObject: 
     wasInit: 0
@@ -549,13 +556,6 @@ MonoBehaviour:
   - list:
     - {fileID: 0}
     ActiveGameObject: {fileID: 0}
-    GUIDsList: []
-    GUIDsActiveGameObject: 
-    wasInit: 0
-    CashedBool: 0
-  - list:
-    - {fileID: 758828537}
-    ActiveGameObject: {fileID: 758828537}
     GUIDsList: []
     GUIDsActiveGameObject: 
     wasInit: 0
@@ -1177,7 +1177,7 @@ RectTransform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2103612888}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.0006405, y: 1.0006405, z: 1.0006405}
   m_Children: []
@@ -1186,8 +1186,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -110.70001, y: -110.69998}
-  m_SizeDelta: {x: 221.4, y: 221.4}
+  m_AnchoredPosition: {x: -56, y: -60}
+  m_SizeDelta: {x: 231, y: 231}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2103612890
 MonoBehaviour:

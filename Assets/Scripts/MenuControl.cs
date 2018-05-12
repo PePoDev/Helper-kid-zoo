@@ -22,7 +22,7 @@ public class MenuControl : MonoBehaviour {
 	// On click play button in menu scene
 	public void PlayGame() {
 		AudioSource.PlayClipAtPoint(ClickAudio, new Vector3(0f, 0f, -10f));
-		SceneManager.LoadSceneAsync(Singleton.Scene.Map.ToString());
+		SceneManager.LoadSceneAsync(Singleton.Scene.StartStory.ToString());
 	}
 
 	// On click tutorials in menu scene

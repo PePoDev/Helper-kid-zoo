@@ -1,16 +1,35 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Tiger : MonoBehaviour {
+	public GameObject PlayPanel;
+	public AudioClip QestionVoice;
+	public AudioClip Wrong,Correct;
+	public GameObject TigetObj;
+	public Sprite TigerSprite;
+	public GameObject SoundIcon;
+	public Sprite SoundIconSprite;
+	public GameObject HintChoice;
 
-	// Use this for initialization
-	void Start () {
-		
+	public void InputClick(int i) {
+		if (i == 0) {
+			PlayPanel.SetActive(false);
+			AudioSource.PlayClipAtPoint(Correct,gameObject.transform.position);
+			TigetObj.GetComponent<Image>().sprite = TigerSprite;
+			gameObject.SendMessage("Win");
+		} else {
+			AudioSource.PlayClipAtPoint(Wrong, gameObject.transform.position);
+			HintChoice.SetActive(true);
+		}
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+	public void FinishStory() {
+		StartCoroutine(Question());
+	}
+	IEnumerator Question() {
+		PlayPanel.SetActive(true);
+		AudioSource.PlayClipAtPoint(QestionVoice, gameObject.transform.position);
+		yield return new WaitForSeconds(QestionVoice.length);
+		SoundIcon.GetComponent<Image>().sprite = SoundIconSprite;
 	}
 }

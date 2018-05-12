@@ -7,5 +7,7 @@ static class Singleton {
 		Menu,
 		Map,
 		Mission,
+		StartStory,
+		EndStory
 	}
 }

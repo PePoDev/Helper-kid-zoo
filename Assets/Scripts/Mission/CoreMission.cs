@@ -34,10 +34,16 @@ public class CoreMission : MonoBehaviour {
 	public void ClearMission(int Mission) {
 		// Set this mission status to complate
 		PlayerPrefs.SetString("MissionLevel" + Mission.ToString(), "complate");
-		// Unlock next level
-		PlayerPrefs.SetString("MissionLevel" + (Mission + 1).ToString(), "play");
-		// Load map scene
-		backToMap();
+		// If this mission is last level
+		if (Mission == 7) {
+			AudioSource.PlayClipAtPoint(ClickAudio, new Vector3(0f, 0f, -10f));
+			SceneManager.LoadSceneAsync(Singleton.Scene.EndStory.ToString());
+		} else { // If not
+			// Unlock next level
+			PlayerPrefs.SetString("MissionLevel" + ( Mission + 1 ).ToString(), "play");
+			// Load map scene
+			backToMap();
+		}
 	}
 
 	// For hide tutorials and display ready text
