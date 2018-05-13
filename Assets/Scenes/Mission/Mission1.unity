@@ -1476,8 +1476,29 @@ MonoBehaviour:
   Hash2: []
   Hash3:
   - list:
+    - {fileID: 1417793347}
+    ActiveGameObject: {fileID: 1417793347}
+    GUIDsList: []
+    GUIDsActiveGameObject: 
+    wasInit: 0
+    CashedBool: 0
+  - list:
+    - {fileID: 65874419}
+    ActiveGameObject: {fileID: 65874419}
+    GUIDsList: []
+    GUIDsActiveGameObject: 
+    wasInit: 0
+    CashedBool: 0
+  - list:
     - {fileID: 228491658}
     ActiveGameObject: {fileID: 228491658}
+    GUIDsList: []
+    GUIDsActiveGameObject: 
+    wasInit: 0
+    CashedBool: 0
+  - list:
+    - {fileID: 1913830428}
+    ActiveGameObject: {fileID: 1913830428}
     GUIDsList: []
     GUIDsActiveGameObject: 
     wasInit: 0
@@ -1539,22 +1560,8 @@ MonoBehaviour:
     wasInit: 0
     CashedBool: 0
   - list:
-    - {fileID: 1417793347}
-    ActiveGameObject: {fileID: 1417793347}
-    GUIDsList: []
-    GUIDsActiveGameObject: 
-    wasInit: 0
-    CashedBool: 0
-  - list:
     - {fileID: 741592147}
     ActiveGameObject: {fileID: 741592147}
-    GUIDsList: []
-    GUIDsActiveGameObject: 
-    wasInit: 0
-    CashedBool: 0
-  - list:
-    - {fileID: 65874419}
-    ActiveGameObject: {fileID: 65874419}
     GUIDsList: []
     GUIDsActiveGameObject: 
     wasInit: 0
@@ -1635,13 +1642,6 @@ MonoBehaviour:
   - list:
     - {fileID: 0}
     ActiveGameObject: {fileID: 0}
-    GUIDsList: []
-    GUIDsActiveGameObject: 
-    wasInit: 0
-    CashedBool: 0
-  - list:
-    - {fileID: 1913830428}
-    ActiveGameObject: {fileID: 1913830428}
     GUIDsList: []
     GUIDsActiveGameObject: 
     wasInit: 0
@@ -1972,7 +1972,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 125.3, y: -25.1}
+  m_AnchoredPosition: {x: 193.5, y: -5}
   m_SizeDelta: {x: 73.53, y: 73.527}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1417793349

@@ -1734,6 +1734,35 @@ MonoBehaviour:
   Hash2: []
   Hash3:
   - list:
+    - {fileID: 881980527}
+    ActiveGameObject: {fileID: 881980527}
+    GUIDsList: []
+    GUIDsActiveGameObject: 
+    wasInit: 0
+    CashedBool: 0
+  - list:
+    - {fileID: 1861859614}
+    ActiveGameObject: {fileID: 1861859614}
+    GUIDsList: []
+    GUIDsActiveGameObject: 
+    wasInit: 0
+    CashedBool: 0
+  - list:
+    - {fileID: 1620017446}
+    - {fileID: 1861859614}
+    ActiveGameObject: {fileID: 1620017446}
+    GUIDsList: []
+    GUIDsActiveGameObject: 
+    wasInit: 0
+    CashedBool: 0
+  - list:
+    - {fileID: 142995102}
+    ActiveGameObject: {fileID: 142995102}
+    GUIDsList: []
+    GUIDsActiveGameObject: 
+    wasInit: 0
+    CashedBool: 0
+  - list:
     - {fileID: 1417793347}
     ActiveGameObject: {fileID: 1417793347}
     GUIDsList: []
@@ -1846,13 +1875,6 @@ MonoBehaviour:
     wasInit: 0
     CashedBool: 0
   - list:
-    - {fileID: 881980527}
-    ActiveGameObject: {fileID: 881980527}
-    GUIDsList: []
-    GUIDsActiveGameObject: 
-    wasInit: 0
-    CashedBool: 0
-  - list:
     - {fileID: 1735710741}
     ActiveGameObject: {fileID: 1735710741}
     GUIDsList: []
@@ -1876,27 +1898,6 @@ MonoBehaviour:
   - list:
     - {fileID: 0}
     ActiveGameObject: {fileID: 0}
-    GUIDsList: []
-    GUIDsActiveGameObject: 
-    wasInit: 0
-    CashedBool: 0
-  - list:
-    - {fileID: 65874419}
-    ActiveGameObject: {fileID: 65874419}
-    GUIDsList: []
-    GUIDsActiveGameObject: 
-    wasInit: 0
-    CashedBool: 0
-  - list:
-    - {fileID: 217100123}
-    ActiveGameObject: {fileID: 217100123}
-    GUIDsList: []
-    GUIDsActiveGameObject: 
-    wasInit: 0
-    CashedBool: 0
-  - list:
-    - {fileID: 1846895827}
-    ActiveGameObject: {fileID: 1846895827}
     GUIDsList: []
     GUIDsActiveGameObject: 
     wasInit: 0
@@ -2333,8 +2334,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 287.8, y: 101.2}
-  m_SizeDelta: {x: 127, y: 487}
+  m_AnchoredPosition: {x: 286.3, y: 101.2}
+  m_SizeDelta: {x: 142.24, y: 545.45}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1620017448
 MonoBehaviour:
@@ -2805,8 +2806,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 278.4, y: 101.2}
-  m_SizeDelta: {x: 181, y: 571}
+  m_AnchoredPosition: {x: 279.7, y: 101.2}
+  m_SizeDelta: {x: 202.72, y: 639.53}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1861859616
 MonoBehaviour:
