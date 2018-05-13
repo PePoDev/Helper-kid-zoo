@@ -11,7 +11,6 @@ public class UIElementDragger : MonoBehaviour {
 	private bool dragging = false;
 	private Vector2 originalPosition;
 	private Transform objectToDrag;
-	private Image objectToDragImage;
 	private List<RaycastResult> hitObjects = new List<RaycastResult>();
 
 	void Update() {
@@ -21,7 +20,6 @@ public class UIElementDragger : MonoBehaviour {
 				dragging = true;
 
 				originalPosition = objectToDrag.position;
-				objectToDragImage = objectToDrag.GetComponent<Image>();
 			}
 			A1.SetActive(false);
 			A2.SetActive(false);

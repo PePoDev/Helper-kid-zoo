@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Parrot : MonoBehaviour {
@@ -7,37 +6,44 @@ public class Parrot : MonoBehaviour {
 	public GameObject[] InputBridObj;
 	public GameObject[] HintBridObj;
 	public GameObject[] BridStepCorrect;
-	public AudioClip Correct, Worng;
+	public AudioClip Correct, Worng, QuestionVoice;
 
-	private int currentAnswer = 0;
-	private bool canClick = false;
+	private int currentAnswer = 1;
 
 	public void InputClick(int i) {
-		if (canClick) {
-			if (currentAnswer == i) {
-				AudioSource.PlayClipAtPoint(Correct, gameObject.transform.position);
-				CorrectBridObj[i].SetActive(true);
-				InputBridObj[i].SetActive(false);
-				HintBridObj[i].SetActive(false);
-				currentAnswer++;
-				if (currentAnswer == 3) {
-					gameObject.SendMessage("ClearMission",7);
-				}
-			} else {
-				AudioSource.PlayClipAtPoint(Worng, gameObject.transform.position);
-				HintBridObj[currentAnswer].SetActive(true);
+		if (currentAnswer == i) {
+			AudioSource.PlayClipAtPoint(Correct, gameObject.transform.position);
+			CorrectBridObj[i - 1].SetActive(true);
+			InputBridObj[i - 1].SetActive(false);
+			HintBridObj[i - 1].SetActive(false);
+			currentAnswer++;
+			if (currentAnswer == 4) {
+				gameObject.SendMessage("ClearMission", 7);
 			}
+		} else {
+			AudioSource.PlayClipAtPoint(Worng, gameObject.transform.position);
+			HintBridObj[currentAnswer - 1].SetActive(true);
 		}
 	}
 	public void FinishStory() {
 		StartCoroutine(Question());
 	}
 	IEnumerator Question() {
-		for (int i = 0; i < BridStepCorrect.Length; i++) {
-			BridStepCorrect[i].SetActive(true);
-			yield return new WaitForSeconds(1f);
-			BridStepCorrect[i].SetActive(false);
-		}
-		canClick = true;
+		AudioSource.PlayClipAtPoint(QuestionVoice, gameObject.transform.position);
+		yield return new WaitForSeconds(6.5f);
+
+		BridStepCorrect[0].SetActive(true);
+		yield return new WaitForSeconds(4f);
+		BridStepCorrect[0].SetActive(false);
+
+		BridStepCorrect[1].SetActive(true);
+		yield return new WaitForSeconds(3.5f);
+		BridStepCorrect[1].SetActive(false);
+
+		BridStepCorrect[2].SetActive(true);
+		yield return new WaitForSeconds(3f);
+		BridStepCorrect[2].SetActive(false);
+
+		gameObject.SendMessage("TurnOnCanDrag");
 	}
 }

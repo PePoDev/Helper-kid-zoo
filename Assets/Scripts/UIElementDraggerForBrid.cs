@@ -8,20 +8,22 @@ public class UIElementDraggerForBrid : MonoBehaviour {
 	public const string DRAGGABLE_TAG = "UIDraggable";
 	public GameObject A1, A2, A3;
 
+	private bool canDrag = false;
 	private bool dragging = false;
 	private Vector2 originalPosition;
 	private Transform objectToDrag;
-	private Image objectToDragImage;
 	private List<RaycastResult> hitObjects = new List<RaycastResult>();
 
-	void Update() {
-		if (Input.GetMouseButtonDown(0)) {
+	public void TurnOnCanDrag(){
+		canDrag = true;
+	}
+	private void Update() {
+		if (Input.GetMouseButtonDown(0) && canDrag) {
 			objectToDrag = GetDraggableTransformUnderMouse();
 			if (objectToDrag != null) {
 				dragging = true;
 
 				originalPosition = objectToDrag.position;
-				objectToDragImage = objectToDrag.GetComponent<Image>();
 			}
 			A1.SetActive(false);
 			A2.SetActive(false);
@@ -37,11 +39,11 @@ public class UIElementDraggerForBrid : MonoBehaviour {
 
 				if (objectToReplace != null) {
 					if (objectToDrag.name.Equals("Input 1"))
-						gameObject.SendMessage("ClickInput", 2);
+						gameObject.SendMessage("InputClick", 2);
 					else if (objectToDrag.name.Equals("Input 2"))
-						gameObject.SendMessage("ClickInput", 3);
+						gameObject.SendMessage("InputClick", 1);
 					else if (objectToDrag.name.Equals("Input 3"))
-						gameObject.SendMessage("ClickInput", 1);
+						gameObject.SendMessage("InputClick", 3);
 				}
 				objectToDrag.position = originalPosition;
 
