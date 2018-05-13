@@ -13,6 +13,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pluginID: 0
   last_scenesV2:
+  - guid: 99c9720ab356a0642a771bea13969a05
+    pin: 0
+  - guid: cb853fd6bc8b0c24e870d8d4f7f61062
+    pin: 0
+  - guid: ec5a6ff6cbb04914e8f9c26c0555d9b1
+    pin: 0
   - guid: a11aad0c14558c54e8fb1279825615ce
     pin: 0
   - guid: 7802569cb53646b4ba96c4153b015b44
@@ -30,12 +36,6 @@ MonoBehaviour:
   - guid: 4a6b326c2e2f3b74fae576a8569886cb
     pin: 0
   - guid: 0c67ba601b922bf4984b8b5276731c18
-    pin: 0
-  - guid: 99c9720ab356a0642a771bea13969a05
-    pin: 0
-  - guid: cb853fd6bc8b0c24e870d8d4f7f61062
-    pin: 0
-  - guid: ec5a6ff6cbb04914e8f9c26c0555d9b1
     pin: 0
   last_scenes: []
   m_hiddenComponents: []

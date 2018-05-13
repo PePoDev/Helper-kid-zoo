@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class StoryControl : MonoBehaviour {
 	public GameObject VideoStroy;
+	public GameObject ImageTemp;
 	public GameObject Go;
 
 	private void Start() {
@@ -14,7 +15,9 @@ public class StoryControl : MonoBehaviour {
 		SceneManager.LoadSceneAsync(Singleton.Scene.Map.ToString());
 	}
 	IEnumerator WaitStoryEnd() {
-		yield return new WaitForSeconds(2f);
+		yield return new WaitUntil(() => VideoStroy.GetComponent<VideoPlayer>().isPlaying);
+		yield return new WaitForSeconds(0.2f);
+		ImageTemp.SetActive(false);
 		yield return new WaitUntil(() => !VideoStroy.GetComponent<VideoPlayer>().isPlaying);
 		Go.SetActive(true);
 	}

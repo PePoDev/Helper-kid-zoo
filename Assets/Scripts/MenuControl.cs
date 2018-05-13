@@ -1,13 +1,18 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Video;
 
 public class MenuControl : MonoBehaviour {
 	// Obj link with tutorials in Menu scene
 	public  GameObject tutorial;
 	public AudioClip ClickAudio;
+	public VideoPlayer VideoStroy;
+	public GameObject ImageTemp;
 
 	// Initial all mission level
 	private void Start() {
+		StartCoroutine(WaitStoryEnd());
 		PlayerPrefs.DeleteAll();
 		PlayerPrefs.SetString("MissionLevel0", "play");
 		PlayerPrefs.SetString("MissionLevel1", "lock");
@@ -35,5 +40,10 @@ public class MenuControl : MonoBehaviour {
 	public void CloseTutorial() {
 		AudioSource.PlayClipAtPoint(ClickAudio, new Vector3(0f, 0f, -10f));
 		tutorial.SetActive(false);
+	}
+	IEnumerator WaitStoryEnd() {
+		yield return new WaitUntil(() => VideoStroy.GetComponent<VideoPlayer>().isPlaying);
+		yield return new WaitForSeconds(0.2f);
+		ImageTemp.SetActive(false);
 	}
 }
