@@ -33,8 +33,9 @@ public class Tiger : MonoBehaviour {
 	IEnumerator Question() {
 		AS.volume = 0f;
 		PlayPanel.SetActive(true);
+		yield return new WaitForSeconds(0.3f);
 		AudioSource.PlayClipAtPoint(QestionVoice, gameObject.transform.position);
-		yield return new WaitForSeconds(QestionVoice.length);
+		yield return new WaitForSeconds(QestionVoice.length + 0.3f);
 		canClick = true;
 		AS.volume = 1f;
 		SoundIcon.GetComponent<Image>().sprite = SoundIconSprite;

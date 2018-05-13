@@ -649,6 +649,7 @@ MonoBehaviour:
   SoundIcon: {fileID: 2041139526}
   SoundIconSprite: {fileID: 21300000, guid: ccb56c2693dc8c544b55efb2bdfe73b8, type: 3}
   HintChoice: {fileID: 1811009927}
+  AS: {fileID: 1284445154}
 --- !u!1 &718990692
 GameObject:
   m_ObjectHideFlags: 0
@@ -903,7 +904,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 41.1, y: -27.2}
+  m_AnchoredPosition: {x: 38.1, y: -27.8}
   m_SizeDelta: {x: 824.61, y: 559.56}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1074247294
@@ -940,6 +941,34 @@ MonoBehaviour:
   - list:
     - {fileID: 897786551}
     ActiveGameObject: {fileID: 897786551}
+    GUIDsList: []
+    GUIDsActiveGameObject: 
+    wasInit: 0
+    CashedBool: 0
+  - list:
+    - {fileID: 1913830428}
+    ActiveGameObject: {fileID: 1913830428}
+    GUIDsList: []
+    GUIDsActiveGameObject: 
+    wasInit: 0
+    CashedBool: 0
+  - list:
+    - {fileID: 1699029069}
+    ActiveGameObject: {fileID: 1699029069}
+    GUIDsList: []
+    GUIDsActiveGameObject: 
+    wasInit: 0
+    CashedBool: 0
+  - list:
+    - {fileID: 668422230}
+    ActiveGameObject: {fileID: 668422230}
+    GUIDsList: []
+    GUIDsActiveGameObject: 
+    wasInit: 0
+    CashedBool: 0
+  - list:
+    - {fileID: 1284445153}
+    ActiveGameObject: {fileID: 1284445153}
     GUIDsList: []
     GUIDsActiveGameObject: 
     wasInit: 0
@@ -996,20 +1025,6 @@ MonoBehaviour:
     wasInit: 0
     CashedBool: 0
   - list:
-    - {fileID: 668422230}
-    ActiveGameObject: {fileID: 668422230}
-    GUIDsList: []
-    GUIDsActiveGameObject: 
-    wasInit: 0
-    CashedBool: 0
-  - list:
-    - {fileID: 1284445153}
-    ActiveGameObject: {fileID: 1284445153}
-    GUIDsList: []
-    GUIDsActiveGameObject: 
-    wasInit: 0
-    CashedBool: 0
-  - list:
     - {fileID: 65874419}
     ActiveGameObject: {fileID: 65874419}
     GUIDsList: []
@@ -1049,20 +1064,6 @@ MonoBehaviour:
   - list:
     - {fileID: 228491658}
     ActiveGameObject: {fileID: 228491658}
-    GUIDsList: []
-    GUIDsActiveGameObject: 
-    wasInit: 0
-    CashedBool: 0
-  - list:
-    - {fileID: 1913830428}
-    ActiveGameObject: {fileID: 1913830428}
-    GUIDsList: []
-    GUIDsActiveGameObject: 
-    wasInit: 0
-    CashedBool: 0
-  - list:
-    - {fileID: 1699029069}
-    ActiveGameObject: {fileID: 1699029069}
     GUIDsList: []
     GUIDsActiveGameObject: 
     wasInit: 0
