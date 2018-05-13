@@ -558,7 +558,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.42745098}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1340,8 +1340,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 206.78, y: -121.00001}
-  m_SizeDelta: {x: 108.41, y: 97.59}
+  m_AnchoredPosition: {x: 206.87, y: -120.87}
+  m_SizeDelta: {x: 109.31, y: 94.71}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &811521001
 MonoBehaviour:
@@ -1476,41 +1476,6 @@ MonoBehaviour:
   Hash2: []
   Hash3:
   - list:
-    - {fileID: 1417793347}
-    ActiveGameObject: {fileID: 1417793347}
-    GUIDsList: []
-    GUIDsActiveGameObject: 
-    wasInit: 0
-    CashedBool: 0
-  - list:
-    - {fileID: 65874419}
-    ActiveGameObject: {fileID: 65874419}
-    GUIDsList: []
-    GUIDsActiveGameObject: 
-    wasInit: 0
-    CashedBool: 0
-  - list:
-    - {fileID: 228491658}
-    ActiveGameObject: {fileID: 228491658}
-    GUIDsList: []
-    GUIDsActiveGameObject: 
-    wasInit: 0
-    CashedBool: 0
-  - list:
-    - {fileID: 1913830428}
-    ActiveGameObject: {fileID: 1913830428}
-    GUIDsList: []
-    GUIDsActiveGameObject: 
-    wasInit: 0
-    CashedBool: 0
-  - list:
-    - {fileID: 1864674468}
-    ActiveGameObject: {fileID: 1864674468}
-    GUIDsList: []
-    GUIDsActiveGameObject: 
-    wasInit: 0
-    CashedBool: 0
-  - list:
     - {fileID: 811520998}
     ActiveGameObject: {fileID: 811520998}
     GUIDsList: []
@@ -1520,6 +1485,13 @@ MonoBehaviour:
   - list:
     - {fileID: 1136027200}
     ActiveGameObject: {fileID: 1136027200}
+    GUIDsList: []
+    GUIDsActiveGameObject: 
+    wasInit: 0
+    CashedBool: 0
+  - list:
+    - {fileID: 610305278}
+    ActiveGameObject: {fileID: 610305278}
     GUIDsList: []
     GUIDsActiveGameObject: 
     wasInit: 0
@@ -1539,22 +1511,15 @@ MonoBehaviour:
     wasInit: 0
     CashedBool: 0
   - list:
-    - {fileID: 9133266}
-    ActiveGameObject: {fileID: 9133266}
+    - {fileID: 665807310}
+    ActiveGameObject: {fileID: 665807310}
     GUIDsList: []
     GUIDsActiveGameObject: 
     wasInit: 0
     CashedBool: 0
   - list:
-    - {fileID: 668422230}
-    ActiveGameObject: {fileID: 668422230}
-    GUIDsList: []
-    GUIDsActiveGameObject: 
-    wasInit: 0
-    CashedBool: 0
-  - list:
-    - {fileID: 1284445153}
-    ActiveGameObject: {fileID: 1284445153}
+    - {fileID: 65874419}
+    ActiveGameObject: {fileID: 65874419}
     GUIDsList: []
     GUIDsActiveGameObject: 
     wasInit: 0
@@ -1567,17 +1532,57 @@ MonoBehaviour:
     wasInit: 0
     CashedBool: 0
   - list:
-    - {fileID: 0}
-    ActiveGameObject: {fileID: 0}
+    - {fileID: 9133266}
+    ActiveGameObject: {fileID: 9133266}
     GUIDsList: []
     GUIDsActiveGameObject: 
     wasInit: 0
     CashedBool: 0
   - list:
-    - {fileID: 298698994}
-    - {fileID: 549473757}
-    - {fileID: 610305278}
-    ActiveGameObject: {fileID: 610305278}
+    - {fileID: 228491658}
+    ActiveGameObject: {fileID: 228491658}
+    GUIDsList: []
+    GUIDsActiveGameObject: 
+    wasInit: 0
+    CashedBool: 0
+  - list:
+    - {fileID: 668422230}
+    ActiveGameObject: {fileID: 668422230}
+    GUIDsList: []
+    GUIDsActiveGameObject: 
+    wasInit: 0
+    CashedBool: 0
+  - list:
+    - {fileID: 1417793347}
+    ActiveGameObject: {fileID: 1417793347}
+    GUIDsList: []
+    GUIDsActiveGameObject: 
+    wasInit: 0
+    CashedBool: 0
+  - list:
+    - {fileID: 1913830428}
+    ActiveGameObject: {fileID: 1913830428}
+    GUIDsList: []
+    GUIDsActiveGameObject: 
+    wasInit: 0
+    CashedBool: 0
+  - list:
+    - {fileID: 1864674468}
+    ActiveGameObject: {fileID: 1864674468}
+    GUIDsList: []
+    GUIDsActiveGameObject: 
+    wasInit: 0
+    CashedBool: 0
+  - list:
+    - {fileID: 1284445153}
+    ActiveGameObject: {fileID: 1284445153}
+    GUIDsList: []
+    GUIDsActiveGameObject: 
+    wasInit: 0
+    CashedBool: 0
+  - list:
+    - {fileID: 0}
+    ActiveGameObject: {fileID: 0}
     GUIDsList: []
     GUIDsActiveGameObject: 
     wasInit: 0
@@ -1621,13 +1626,6 @@ MonoBehaviour:
   - list:
     - {fileID: 2731553}
     ActiveGameObject: {fileID: 2731553}
-    GUIDsList: []
-    GUIDsActiveGameObject: 
-    wasInit: 0
-    CashedBool: 0
-  - list:
-    - {fileID: 665807310}
-    ActiveGameObject: {fileID: 665807310}
     GUIDsList: []
     GUIDsActiveGameObject: 
     wasInit: 0
@@ -1711,8 +1709,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -209.75, y: -119.84}
-  m_SizeDelta: {x: 112.31, y: 97.62}
+  m_AnchoredPosition: {x: -209.75, y: -120.6}
+  m_SizeDelta: {x: 109, y: 95.26}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1136027203
 MonoBehaviour:

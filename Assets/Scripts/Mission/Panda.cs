@@ -23,6 +23,7 @@ public class Panda : MonoBehaviour {
 
 	public void FinishStory() {
 		InputPanel.SetActive(true);
+		MainPanel.GetComponent<Image>().color = new Color(0f, 0f, 0f, 0.5f);
 	}
 	public void OnClickInput(int choice) {
 		if (WaitInput && quizNumber == 1) {
@@ -62,12 +63,16 @@ public class Panda : MonoBehaviour {
 	}
 
 	IEnumerator StoryForQuiz2() {
-		yield return new WaitForSeconds(0.75f);
+		yield return new WaitForSeconds(1f);
 		CorrectAnswer[0].SetActive(false);
+		InputPanel.SetActive(false);
+		MainPanel.SetActive(false);
+		yield return new WaitForSeconds(1.5f);
 		StoryPanel.SetActive(true);
 		StoryPanel.GetComponent<Image>().sprite = Story2;
 		AudioSource.PlayClipAtPoint(Story2Audio, new Vector3(0f, 0f, -10f));
 		InputPanel.SetActive(false);
+		MainPanel.GetComponent<Image>().color = new Color(0f, 0f, 0f, 0f);
 		MainPanel.SetActive(true);
 		Quiz.GetComponent<Image>().sprite = Quiz2;
 		Choice[0].GetComponent<Image>().sprite = Choice2[0];
@@ -76,13 +81,17 @@ public class Panda : MonoBehaviour {
 		yield return new WaitForSeconds(Story2Audio.length);
 		StoryPanel.SetActive(false);
 		InputPanel.SetActive(true);
+		MainPanel.GetComponent<Image>().color = new Color(0f, 0f, 0f, 0.5f);
 		MainPanel.SetActive(false);
 		WaitInput = true;
 	}
 	IEnumerator WinStory() {
 		yield return new WaitForSeconds(0.75f);
 		InputPanel.SetActive(false);
+		MainPanel.SetActive(false);
+		yield return new WaitForSeconds(1f);
 		MainPanel.SetActive(true);
+		MainPanel.GetComponent<Image>().color = new Color(0f, 0f, 0f, 0f);
 		gameObject.SendMessage("Win");
 	}
 }
