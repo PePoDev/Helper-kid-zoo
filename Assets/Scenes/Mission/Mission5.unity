@@ -655,6 +655,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: da2888338e1fe0548832191393f7362a, type: 3}
   - {fileID: 8300000, guid: 02b6f4a64e813a440906a16807c2a6c2, type: 3}
   QuestionVoice: {fileID: 8300000, guid: ad71411437796744db87c35d8767dece, type: 3}
+  AS: {fileID: 1284445154}
 --- !u!1 &741592147
 GameObject:
   m_ObjectHideFlags: 0
