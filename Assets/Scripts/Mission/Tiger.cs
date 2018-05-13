@@ -21,7 +21,7 @@ public class Tiger : MonoBehaviour {
 				PlayPanel.SetActive(false);
 				AudioSource.PlayClipAtPoint(Correct, gameObject.transform.position);
 				TigetObj.GetComponent<Image>().sprite = TigerSprite;
-				gameObject.SendMessage("Win");
+				StartCoroutine(ShowTiger());
 			} else {
 				AudioSource.PlayClipAtPoint(Wrong, gameObject.transform.position);
 				HintChoice.SetActive(true);
@@ -31,13 +31,21 @@ public class Tiger : MonoBehaviour {
 		StartCoroutine(Question());
 	}
 	IEnumerator Question() {
-		AS.volume = 0f;
+		yield return new WaitForSeconds(1.5f);
 		PlayPanel.SetActive(true);
 		yield return new WaitForSeconds(0.3f);
 		AudioSource.PlayClipAtPoint(QestionVoice, gameObject.transform.position);
-		yield return new WaitForSeconds(QestionVoice.length + 0.3f);
+		yield return new WaitForSeconds(6.8f);
+		AS.volume = 0f;
+		yield return new WaitForSeconds(12.6f - 6.8f);
+		AS.volume = 0.3f;
+		yield return new WaitForSeconds(QestionVoice.length - 12.6f);
 		canClick = true;
-		AS.volume = 1f;
+		AS.volume = 0.3f;
 		SoundIcon.GetComponent<Image>().sprite = SoundIconSprite;
+	}
+	IEnumerator ShowTiger() {
+		yield return new WaitForSeconds(1.5f);
+		gameObject.SendMessage("Win");
 	}
 }

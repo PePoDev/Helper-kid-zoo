@@ -45,8 +45,9 @@ public class Elephant : MonoBehaviour {
 		}
 		yield return new WaitForSeconds(0.5f);
 		AudioSource.PlayClipAtPoint(QuestionVoice, gameObject.transform.position);
-		yield return new WaitForSeconds(QuestionVoice.length + 0.5f);
-		AS.volume = 1f;
+		yield return new WaitForSeconds(3.2f);
+		AS.volume = 0.3f;
+		yield return new WaitForSeconds(QuestionVoice.length - 3.2f);
 		canClick = true;
 	}
 }
