@@ -22,6 +22,7 @@ public class Sheep : MonoBehaviour {
     [Header("Win Settings")]
     public AudioClip WinVoice;
 	public GameObject PanelWin;
+	public GameObject WinButton;
 
 	public GameObject PanelLose, Group1, Group2;
 	public AudioClip AudioCorrect, AudioWorng, LoseVoice;
@@ -58,9 +59,9 @@ public class Sheep : MonoBehaviour {
 
 	// Win text display
 	public void Win() {
-		AudioSource.PlayClipAtPoint(WinVoice, new Vector3(0f, 0f, -10f));
 		Panel.SetActive(true);
 		PanelWin.SetActive(true);
+		StartCoroutine(WinDelay());
 	}
 
 	// Method for delay to display tutorials in array spriteTutorials[]
@@ -95,11 +96,11 @@ public class Sheep : MonoBehaviour {
 			switch (i) {
 				case 1:
 					AudioSource.PlayClipAtPoint(AudioWorng, new Vector3(0f, 0f, -10f));
-					SheepCorrect.GetComponent<Image>().sprite = SheepHint;
+					SheepCorrect.SetActive(true);
 					break;
 				case 2:
 					AudioSource.PlayClipAtPoint(AudioWorng, new Vector3(0f, 0f, -10f));
-					SheepCorrect.GetComponent<Image>().sprite = SheepHint;
+					SheepCorrect.SetActive(true);
 					break;
 				case 3:
 					AudioSource.PlayClipAtPoint(AudioCorrect, new Vector3(0f, 0f, -10f));
@@ -141,5 +142,10 @@ public class Sheep : MonoBehaviour {
 		Group2.SetActive(true);
 		Panel.SetActive(false);
 		PanelLose.SetActive(false);
+	}
+	IEnumerator WinDelay() {
+		AudioSource.PlayClipAtPoint(WinVoice, gameObject.transform.position);
+		yield return new WaitForSeconds(WinVoice.length);
+		WinButton.SetActive(true);
 	}
 }

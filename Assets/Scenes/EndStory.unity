@@ -356,6 +356,27 @@ MonoBehaviour:
   Hash2: []
   Hash3:
   - list:
+    - {fileID: 2130960999}
+    ActiveGameObject: {fileID: 2130960999}
+    GUIDsList: []
+    GUIDsActiveGameObject: 
+    wasInit: 0
+    CashedBool: 0
+  - list:
+    - {fileID: 701253777}
+    ActiveGameObject: {fileID: 701253777}
+    GUIDsList: []
+    GUIDsActiveGameObject: 
+    wasInit: 0
+    CashedBool: 0
+  - list:
+    - {fileID: 1217205075}
+    ActiveGameObject: {fileID: 1217205075}
+    GUIDsList: []
+    GUIDsActiveGameObject: 
+    wasInit: 0
+    CashedBool: 0
+  - list:
     - {fileID: 165492063}
     ActiveGameObject: {fileID: 165492063}
     GUIDsList: []
@@ -370,29 +391,8 @@ MonoBehaviour:
     wasInit: 0
     CashedBool: 0
   - list:
-    - {fileID: 2130960999}
-    ActiveGameObject: {fileID: 2130960999}
-    GUIDsList: []
-    GUIDsActiveGameObject: 
-    wasInit: 0
-    CashedBool: 0
-  - list:
-    - {fileID: 1217205075}
-    ActiveGameObject: {fileID: 1217205075}
-    GUIDsList: []
-    GUIDsActiveGameObject: 
-    wasInit: 0
-    CashedBool: 0
-  - list:
     - {fileID: 758828537}
     ActiveGameObject: {fileID: 758828537}
-    GUIDsList: []
-    GUIDsActiveGameObject: 
-    wasInit: 0
-    CashedBool: 0
-  - list:
-    - {fileID: 701253777}
-    ActiveGameObject: {fileID: 701253777}
     GUIDsList: []
     GUIDsActiveGameObject: 
     wasInit: 0
@@ -902,7 +902,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 282840812}
         m_MethodName: play
         m_Mode: 1
         m_Arguments:

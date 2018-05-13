@@ -50,7 +50,7 @@ public class Crocodile : MonoBehaviour {
 					GameReset();
 				} else {
 					AudioSource.PlayClipAtPoint(CorrectAudio, new Vector3(0f, 0f, -10f));
-					HintCorrectCrocodilles[0].GetComponent<Image>().sprite = normalCrocodilles[0];
+					HintCorrectCrocodilles[0].SetActive(false);
 					RedCircle2[0].SetActive(true);
 					NumCrocodillesCorrect++;
 				}
@@ -62,9 +62,9 @@ public class Crocodile : MonoBehaviour {
 				} else {
 					AudioSource.PlayClipAtPoint(WrongAudio, new Vector3(0f, 0f, -10f));
 					if (RedCircle2[0].activeSelf)
-						HintCorrectCrocodilles[1].GetComponent<Image>().sprite = redCrocodilles[1];
+						HintCorrectCrocodilles[1].SetActive(true);
 					else
-						HintCorrectCrocodilles[0].GetComponent<Image>().sprite = redCrocodilles[0];
+						HintCorrectCrocodilles[0].SetActive(true);
 				}
 				break;
 			case 3:
@@ -74,7 +74,7 @@ public class Crocodile : MonoBehaviour {
 					NumCrocodillesCorrect++;
 				} else {
 					AudioSource.PlayClipAtPoint(CorrectAudio, new Vector3(0f, 0f, -10f));
-					HintCorrectCrocodilles[1].GetComponent<Image>().sprite = normalCrocodilles[1];
+					HintCorrectCrocodilles[1].SetActive(false);
 					RedCircle2[1].SetActive(true);
 					NumCrocodillesCorrect++;
 				}
@@ -87,9 +87,9 @@ public class Crocodile : MonoBehaviour {
 				} else {
 					AudioSource.PlayClipAtPoint(WrongAudio, new Vector3(0f, 0f, -10f));
 					if (RedCircle2[0].activeSelf)
-						HintCorrectCrocodilles[1].GetComponent<Image>().sprite = redCrocodilles[1];
+						HintCorrectCrocodilles[1].SetActive(true);
 					else
-						HintCorrectCrocodilles[0].GetComponent<Image>().sprite = redCrocodilles[0];
+						HintCorrectCrocodilles[0].SetActive(true);
 				}
 				break;
 		}

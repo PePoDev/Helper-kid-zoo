@@ -20,6 +20,7 @@ public class CoreMission : MonoBehaviour {
     [Header("Win Settings")]
     public AudioClip WinVoice;
 	public GameObject PanelWin;
+	public GameObject WinButton;
 
 	// On start scene will call OnLoadTutorials for display tutorials
 	private void Start() => StartCoroutine(OnLoadTutorials());
@@ -55,9 +56,9 @@ public class CoreMission : MonoBehaviour {
 
 	// Win text display
 	public void Win() {
-		AudioSource.PlayClipAtPoint(WinVoice, new Vector3(0f, 0f, -10f));
 		Panel.SetActive(true);
 		PanelWin.SetActive(true);
+		StartCoroutine(WinDelay());
 	}
 
 	// Method for delay to display tutorials in array spriteTutorials[]
@@ -82,5 +83,10 @@ public class CoreMission : MonoBehaviour {
 		PanelReady.SetActive(false);
 		Panel.SetActive(false);
 		gameObject.SendMessage("FinishStory");
+	}
+	IEnumerator WinDelay() {
+		AudioSource.PlayClipAtPoint(WinVoice, gameObject.transform.position);
+		yield return new WaitForSeconds(WinVoice.length);
+		WinButton.SetActive(true);
 	}
 }

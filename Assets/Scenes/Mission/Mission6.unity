@@ -268,7 +268,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 512.1, y: 354.4}
+  m_SizeDelta: {x: 555.2, y: 387.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &9133268
 MonoBehaviour:
@@ -628,6 +628,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 04f9629d622fd7f4d8b7efc67fb40cfd, type: 3}
   WinVoice: {fileID: 8300000, guid: 14eaa1fa0a159624f90a79feac8694f3, type: 3}
   PanelWin: {fileID: 65874419}
+  WinButton: {fileID: 1417793347}
 --- !u!114 &668422236
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -681,8 +682,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 249.64996, y: -136.65}
-  m_SizeDelta: {x: 266.5, y: 273.3}
+  m_AnchoredPosition: {x: 291, y: -136.65}
+  m_SizeDelta: {x: 310.6, y: 318.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &718990694
 MonoBehaviour:
@@ -902,8 +903,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 28.394634, y: -42.626167}
-  m_SizeDelta: {x: 714, y: 484.5}
+  m_AnchoredPosition: {x: 41.1, y: -27.2}
+  m_SizeDelta: {x: 824.61, y: 559.56}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1074247294
 GameObject:
@@ -937,6 +938,71 @@ MonoBehaviour:
   Hash2: []
   Hash3:
   - list:
+    - {fileID: 897786551}
+    ActiveGameObject: {fileID: 897786551}
+    GUIDsList: []
+    GUIDsActiveGameObject: 
+    wasInit: 0
+    CashedBool: 0
+  - list:
+    - {fileID: 2731553}
+    ActiveGameObject: {fileID: 2731553}
+    GUIDsList: []
+    GUIDsActiveGameObject: 
+    wasInit: 0
+    CashedBool: 0
+  - list:
+    - {fileID: 2041139526}
+    ActiveGameObject: {fileID: 2041139526}
+    GUIDsList: []
+    GUIDsActiveGameObject: 
+    wasInit: 0
+    CashedBool: 0
+  - list:
+    - {fileID: 718990692}
+    - {fileID: 1811009927}
+    - {fileID: 1300540303}
+    ActiveGameObject: {fileID: 1811009927}
+    GUIDsList: []
+    GUIDsActiveGameObject: 
+    wasInit: 0
+    CashedBool: 0
+  - list:
+    - {fileID: 718990692}
+    ActiveGameObject: {fileID: 718990692}
+    GUIDsList: []
+    GUIDsActiveGameObject: 
+    wasInit: 0
+    CashedBool: 0
+  - list:
+    - {fileID: 9133266}
+    ActiveGameObject: {fileID: 9133266}
+    GUIDsList: []
+    GUIDsActiveGameObject: 
+    wasInit: 0
+    CashedBool: 0
+  - list:
+    - {fileID: 1864674468}
+    ActiveGameObject: {fileID: 1864674468}
+    GUIDsList: []
+    GUIDsActiveGameObject: 
+    wasInit: 0
+    CashedBool: 0
+  - list:
+    - {fileID: 1417793347}
+    ActiveGameObject: {fileID: 1417793347}
+    GUIDsList: []
+    GUIDsActiveGameObject: 
+    wasInit: 0
+    CashedBool: 0
+  - list:
+    - {fileID: 668422230}
+    ActiveGameObject: {fileID: 668422230}
+    GUIDsList: []
+    GUIDsActiveGameObject: 
+    wasInit: 0
+    CashedBool: 0
+  - list:
     - {fileID: 1284445153}
     ActiveGameObject: {fileID: 1284445153}
     GUIDsList: []
@@ -958,27 +1024,6 @@ MonoBehaviour:
     wasInit: 0
     CashedBool: 0
   - list:
-    - {fileID: 1417793347}
-    ActiveGameObject: {fileID: 1417793347}
-    GUIDsList: []
-    GUIDsActiveGameObject: 
-    wasInit: 0
-    CashedBool: 0
-  - list:
-    - {fileID: 668422230}
-    ActiveGameObject: {fileID: 668422230}
-    GUIDsList: []
-    GUIDsActiveGameObject: 
-    wasInit: 0
-    CashedBool: 0
-  - list:
-    - {fileID: 718990692}
-    ActiveGameObject: {fileID: 718990692}
-    GUIDsList: []
-    GUIDsActiveGameObject: 
-    wasInit: 0
-    CashedBool: 0
-  - list:
     - {fileID: 1300540303}
     ActiveGameObject: {fileID: 1300540303}
     GUIDsList: []
@@ -986,29 +1031,8 @@ MonoBehaviour:
     wasInit: 0
     CashedBool: 0
   - list:
-    - {fileID: 2041139526}
-    ActiveGameObject: {fileID: 2041139526}
-    GUIDsList: []
-    GUIDsActiveGameObject: 
-    wasInit: 0
-    CashedBool: 0
-  - list:
     - {fileID: 306616983}
     ActiveGameObject: {fileID: 306616983}
-    GUIDsList: []
-    GUIDsActiveGameObject: 
-    wasInit: 0
-    CashedBool: 0
-  - list:
-    - {fileID: 897786551}
-    ActiveGameObject: {fileID: 897786551}
-    GUIDsList: []
-    GUIDsActiveGameObject: 
-    wasInit: 0
-    CashedBool: 0
-  - list:
-    - {fileID: 1811009927}
-    ActiveGameObject: {fileID: 1811009927}
     GUIDsList: []
     GUIDsActiveGameObject: 
     wasInit: 0
@@ -1039,27 +1063,6 @@ MonoBehaviour:
   - list:
     - {fileID: 1699029069}
     ActiveGameObject: {fileID: 1699029069}
-    GUIDsList: []
-    GUIDsActiveGameObject: 
-    wasInit: 0
-    CashedBool: 0
-  - list:
-    - {fileID: 9133266}
-    ActiveGameObject: {fileID: 9133266}
-    GUIDsList: []
-    GUIDsActiveGameObject: 
-    wasInit: 0
-    CashedBool: 0
-  - list:
-    - {fileID: 0}
-    ActiveGameObject: {fileID: 0}
-    GUIDsList: []
-    GUIDsActiveGameObject: 
-    wasInit: 0
-    CashedBool: 0
-  - list:
-    - {fileID: 2731553}
-    ActiveGameObject: {fileID: 2731553}
     GUIDsList: []
     GUIDsActiveGameObject: 
     wasInit: 0
@@ -1296,8 +1299,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -249.65002, y: -136.65}
-  m_SizeDelta: {x: 266.5, y: 273.3}
+  m_AnchoredPosition: {x: -291, y: -136.65}
+  m_SizeDelta: {x: 310.6, y: 318.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1300540305
 MonoBehaviour:
@@ -1401,7 +1404,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1417793348
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1417,7 +1420,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 175.2, y: -28.8}
+  m_AnchoredPosition: {x: 197.3, y: -10.4}
   m_SizeDelta: {x: 73.53, y: 73.527}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1417793349
@@ -1488,7 +1491,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 1417793349}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -1589,7 +1592,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1811009928
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1605,8 +1608,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -249.65002, y: -136.64998}
-  m_SizeDelta: {x: 266.5, y: 273.3}
+  m_AnchoredPosition: {x: -291, y: -136.64998}
+  m_SizeDelta: {x: 310.6, y: 318.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1811009929
 MonoBehaviour:
@@ -1674,8 +1677,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 229, y: 145}
-  m_SizeDelta: {x: 205.1, y: 205.1}
+  m_AnchoredPosition: {x: 230.1, y: 147.1}
+  m_SizeDelta: {x: 128.17, y: 128.17}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1864674470
 MonoBehaviour:
@@ -1955,7 +1958,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 305}
-  m_SizeDelta: {x: 299.9, y: 240.8}
+  m_SizeDelta: {x: 401.6, y: 322.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2041139528
 MonoBehaviour:

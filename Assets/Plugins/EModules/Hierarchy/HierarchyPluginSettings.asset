@@ -21,21 +21,21 @@ MonoBehaviour:
     pin: 0
   - guid: 7df00871b0f731a419e3e2f44e0676e0
     pin: 0
+  - guid: dd1242b92e094a142ae97130bc17b00f
+    pin: 0
   - guid: 44f31ea9786e49f4080a59099c268576
     pin: 0
-  - guid: dd1242b92e094a142ae97130bc17b00f
+  - guid: 12c4f8b9d3cde9347a28ee2d9377dacb
     pin: 0
   - guid: 4a6b326c2e2f3b74fae576a8569886cb
     pin: 0
   - guid: 0c67ba601b922bf4984b8b5276731c18
     pin: 0
-  - guid: ec5a6ff6cbb04914e8f9c26c0555d9b1
+  - guid: 99c9720ab356a0642a771bea13969a05
     pin: 0
   - guid: cb853fd6bc8b0c24e870d8d4f7f61062
     pin: 0
-  - guid: 12c4f8b9d3cde9347a28ee2d9377dacb
-    pin: 0
-  - guid: 99c9720ab356a0642a771bea13969a05
+  - guid: ec5a6ff6cbb04914e8f9c26c0555d9b1
     pin: 0
   last_scenes: []
   m_hiddenComponents: []
