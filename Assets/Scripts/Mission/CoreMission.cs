@@ -27,7 +27,7 @@ public class CoreMission : MonoBehaviour {
 
 	// Back to scene map
 	public void backToMap() {
-		AudioSource.PlayClipAtPoint(ClickAudio, new Vector3(0f, 0f, -10f));
+		AudioSource.PlayClipAtPoint(ClickAudio, new Vector3(0f, 0f, -10f), 0.2f);
 		SceneManager.LoadSceneAsync(Singleton.Scene.Map.ToString());
 	}
 
@@ -37,7 +37,7 @@ public class CoreMission : MonoBehaviour {
 		PlayerPrefs.SetString("MissionLevel" + Mission.ToString(), "complate");
 		// If this mission is last level
 		if (Mission == 7) {
-			AudioSource.PlayClipAtPoint(ClickAudio, new Vector3(0f, 0f, -10f));
+			AudioSource.PlayClipAtPoint(ClickAudio, new Vector3(0f, 0f, -10f) ,0.2f);
 			SceneManager.LoadSceneAsync(Singleton.Scene.EndStory.ToString());
 		} else { // If not
 			// Unlock next level
@@ -49,7 +49,7 @@ public class CoreMission : MonoBehaviour {
 
 	// For hide tutorials and display ready text
 	public void closeTutorial() {
-		AudioSource.PlayClipAtPoint(ClickAudio, new Vector3(0f, 0f, -10f));
+		AudioSource.PlayClipAtPoint(ClickAudio, new Vector3(0f, 0f, -10f),0.2f);
 		PanelTutorials.SetActive(false);
 		StartCoroutine(OnLoadReady());
 	}

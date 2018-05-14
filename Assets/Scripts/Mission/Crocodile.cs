@@ -26,7 +26,7 @@ public class Crocodile : MonoBehaviour {
 	[Header("Crocodille Group 1")]
 	// For show red circle when click right crocodille group 1
 	public GameObject[] RedCircle1;
-	
+
 	[Header("Crocodille Group 2")]
 
 	// For show red circle when click right crocodille group 2
@@ -40,16 +40,16 @@ public class Crocodile : MonoBehaviour {
 
 	// Sprite for red Crocodilles
 	public Sprite[] redCrocodilles;
-	
+
 	// For detect answer when click crocodille
 	public void OnClickCrocodilles(int id) {
 		switch (id) {
 			case 1:
 				if (!Reseted) {
-					AudioSource.PlayClipAtPoint(WrongAudio, new Vector3(0f, 0f, -10f));
+					AudioSource.PlayClipAtPoint(WrongAudio, new Vector3(0f, 0f, -10f), 0.1f);
 					GameReset();
 				} else {
-					AudioSource.PlayClipAtPoint(CorrectAudio, new Vector3(0f, 0f, -10f));
+					AudioSource.PlayClipAtPoint(CorrectAudio, new Vector3(0f, 0f, -10f), 0.2f);
 					HintCorrectCrocodilles[0].SetActive(false);
 					RedCircle2[0].SetActive(true);
 					NumCrocodillesCorrect++;
@@ -57,10 +57,10 @@ public class Crocodile : MonoBehaviour {
 				break;
 			case 2:
 				if (!Reseted) {
-					AudioSource.PlayClipAtPoint(WrongAudio, new Vector3(0f, 0f, -10f));
+					AudioSource.PlayClipAtPoint(WrongAudio, new Vector3(0f, 0f, -10f), 0.1f);
 					GameReset();
 				} else {
-					AudioSource.PlayClipAtPoint(WrongAudio, new Vector3(0f, 0f, -10f));
+					AudioSource.PlayClipAtPoint(WrongAudio, new Vector3(0f, 0f, -10f), 0.1f);
 					if (RedCircle2[0].activeSelf)
 						HintCorrectCrocodilles[1].SetActive(true);
 					else
@@ -69,11 +69,11 @@ public class Crocodile : MonoBehaviour {
 				break;
 			case 3:
 				if (!Reseted) {
-					AudioSource.PlayClipAtPoint(CorrectAudio, new Vector3(0f, 0f, -10f));
+					AudioSource.PlayClipAtPoint(CorrectAudio, new Vector3(0f, 0f, -10f), 0.2f);
 					RedCircle1[0].SetActive(true);
 					NumCrocodillesCorrect++;
 				} else {
-					AudioSource.PlayClipAtPoint(CorrectAudio, new Vector3(0f, 0f, -10f));
+					AudioSource.PlayClipAtPoint(CorrectAudio, new Vector3(0f, 0f, -10f), 0.2f);
 					HintCorrectCrocodilles[1].SetActive(false);
 					RedCircle2[1].SetActive(true);
 					NumCrocodillesCorrect++;
@@ -81,11 +81,11 @@ public class Crocodile : MonoBehaviour {
 				break;
 			case 4:
 				if (!Reseted) {
-					AudioSource.PlayClipAtPoint(CorrectAudio, new Vector3(0f, 0f, -10f));
+					AudioSource.PlayClipAtPoint(CorrectAudio, new Vector3(0f, 0f, -10f), 0.2f);
 					RedCircle1[1].SetActive(true);
 					NumCrocodillesCorrect++;
 				} else {
-					AudioSource.PlayClipAtPoint(WrongAudio, new Vector3(0f, 0f, -10f));
+					AudioSource.PlayClipAtPoint(WrongAudio, new Vector3(0f, 0f, -10f), 0.1f);
 					if (RedCircle2[0].activeSelf)
 						HintCorrectCrocodilles[1].SetActive(true);
 					else
@@ -117,7 +117,7 @@ public class Crocodile : MonoBehaviour {
 	IEnumerator DisplayLosePanel() {
 		MainPanel.SetActive(true);
 		LosePanel.SetActive(true);
-		AudioSource.PlayClipAtPoint(VoiceLose,new Vector3(0f,0f,-10f));
+		AudioSource.PlayClipAtPoint(VoiceLose, new Vector3(0f, 0f, -10f) );
 		yield return new WaitForSeconds(VoiceLose.length + 1.5f);
 		MainPanel.SetActive(false);
 		LosePanel.SetActive(false);

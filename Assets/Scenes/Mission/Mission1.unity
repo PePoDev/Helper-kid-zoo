@@ -1476,6 +1476,13 @@ MonoBehaviour:
   Hash2: []
   Hash3:
   - list:
+    - {fileID: 1284445153}
+    ActiveGameObject: {fileID: 1284445153}
+    GUIDsList: []
+    GUIDsActiveGameObject: 
+    wasInit: 0
+    CashedBool: 0
+  - list:
     - {fileID: 811520998}
     ActiveGameObject: {fileID: 811520998}
     GUIDsList: []
@@ -1569,13 +1576,6 @@ MonoBehaviour:
   - list:
     - {fileID: 1864674468}
     ActiveGameObject: {fileID: 1864674468}
-    GUIDsList: []
-    GUIDsActiveGameObject: 
-    wasInit: 0
-    CashedBool: 0
-  - list:
-    - {fileID: 1284445153}
-    ActiveGameObject: {fileID: 1284445153}
     GUIDsList: []
     GUIDsActiveGameObject: 
     wasInit: 0
@@ -1772,7 +1772,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: fe01a2164e3ef564786225125f8aaf3d, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.3
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 1
   Mute: 0
