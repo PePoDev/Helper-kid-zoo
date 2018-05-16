@@ -46,7 +46,7 @@ public class Crocodile : MonoBehaviour {
 		switch (id) {
 			case 1:
 				if (!Reseted) {
-					AudioSource.PlayClipAtPoint(WrongAudio, new Vector3(0f, 0f, -10f), 0.1f);
+					AudioSource.PlayClipAtPoint(WrongAudio, new Vector3(0f, 0f, -10f), 0.4f);
 					GameReset();
 				} else {
 					AudioSource.PlayClipAtPoint(CorrectAudio, new Vector3(0f, 0f, -10f), 0.2f);
@@ -57,10 +57,10 @@ public class Crocodile : MonoBehaviour {
 				break;
 			case 2:
 				if (!Reseted) {
-					AudioSource.PlayClipAtPoint(WrongAudio, new Vector3(0f, 0f, -10f), 0.1f);
+					AudioSource.PlayClipAtPoint(WrongAudio, new Vector3(0f, 0f, -10f), 0.4f);
 					GameReset();
 				} else {
-					AudioSource.PlayClipAtPoint(WrongAudio, new Vector3(0f, 0f, -10f), 0.1f);
+					AudioSource.PlayClipAtPoint(WrongAudio, new Vector3(0f, 0f, -10f), 0.4f);
 					if (RedCircle2[0].activeSelf)
 						HintCorrectCrocodilles[1].SetActive(true);
 					else
@@ -85,7 +85,7 @@ public class Crocodile : MonoBehaviour {
 					RedCircle1[1].SetActive(true);
 					NumCrocodillesCorrect++;
 				} else {
-					AudioSource.PlayClipAtPoint(WrongAudio, new Vector3(0f, 0f, -10f), 0.1f);
+					AudioSource.PlayClipAtPoint(WrongAudio, new Vector3(0f, 0f, -10f), 0.4f);
 					if (RedCircle2[0].activeSelf)
 						HintCorrectCrocodilles[1].SetActive(true);
 					else
