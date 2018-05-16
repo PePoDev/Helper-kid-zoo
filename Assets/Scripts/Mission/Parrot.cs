@@ -12,7 +12,7 @@ public class Parrot : MonoBehaviour {
 
 	public void InputClick(int i) {
 		if (currentAnswer == i) {
-			AudioSource.PlayClipAtPoint(Correct, gameObject.transform.position);
+			AudioSource.PlayClipAtPoint(Correct, gameObject.transform.position,0.2f);
 			CorrectBridObj[i - 1].SetActive(true);
 			InputBridObj[i - 1].SetActive(false);
 			HintBridObj[i - 1].SetActive(false);
@@ -21,7 +21,7 @@ public class Parrot : MonoBehaviour {
 				gameObject.SendMessage("ClearMission", 7);
 			}
 		} else {
-			AudioSource.PlayClipAtPoint(Worng, gameObject.transform.position);
+			AudioSource.PlayClipAtPoint(Worng, gameObject.transform.position,0.4f);
 			HintBridObj[currentAnswer - 1].SetActive(true);
 		}
 	}

@@ -18,15 +18,15 @@ public class Elephant : MonoBehaviour {
 		if (canClick)
 			switch (i) {
 				case 0:
-					AudioSource.PlayClipAtPoint(RightClick, gameObject.transform.position);
+					AudioSource.PlayClipAtPoint(RightClick, gameObject.transform.position,0.2f);
 					gameObject.SendMessage("Win");
 					break;
 				case 1:
-					AudioSource.PlayClipAtPoint(WrongClick, gameObject.transform.position);
+					AudioSource.PlayClipAtPoint(WrongClick, gameObject.transform.position,0.4f);
 					Hint.SetActive(true);
 					break;
 				case 2:
-					AudioSource.PlayClipAtPoint(WrongClick, gameObject.transform.position);
+					AudioSource.PlayClipAtPoint(WrongClick, gameObject.transform.position,0.4f);
 					Hint.SetActive(true);
 					break;
 			}

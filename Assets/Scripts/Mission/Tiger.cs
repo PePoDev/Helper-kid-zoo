@@ -19,11 +19,11 @@ public class Tiger : MonoBehaviour {
 		if (canClick)
 			if (i == 0) {
 				PlayPanel.SetActive(false);
-				AudioSource.PlayClipAtPoint(Correct, gameObject.transform.position);
+				AudioSource.PlayClipAtPoint(Correct, gameObject.transform.position,0.2f);
 				TigetObj.GetComponent<Image>().sprite = TigerSprite;
 				StartCoroutine(ShowTiger());
 			} else {
-				AudioSource.PlayClipAtPoint(Wrong, gameObject.transform.position);
+				AudioSource.PlayClipAtPoint(Wrong, gameObject.transform.position,0.4f);
 				HintChoice.SetActive(true);
 			}
 	}

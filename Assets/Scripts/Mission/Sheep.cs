@@ -36,7 +36,7 @@ public class Sheep : MonoBehaviour {
 
 	// Back to scene map
 	public void backToMap() {
-		AudioSource.PlayClipAtPoint(ClickAudio, new Vector3(0f, 0f, -10f));
+		AudioSource.PlayClipAtPoint(ClickAudio, new Vector3(0f, 0f, -10f),0.2f);
 		SceneManager.LoadSceneAsync(Singleton.Scene.Map.ToString());
 	}
 
@@ -52,7 +52,7 @@ public class Sheep : MonoBehaviour {
 
 	// For hide tutorials and display ready text
 	public void closeTutorial() {
-		AudioSource.PlayClipAtPoint(ClickAudio, new Vector3(0f, 0f, -10f));
+		AudioSource.PlayClipAtPoint(ClickAudio, new Vector3(0f, 0f, -10f),0.2f);
 		PanelTutorials.SetActive(false);
 		StartCoroutine(SheepImage());
 	}
@@ -78,16 +78,16 @@ public class Sheep : MonoBehaviour {
 		if (!Reseted) {
 			switch (i) {
 				case 1:
-					AudioSource.PlayClipAtPoint(AudioWorng, new Vector3(0f, 0f, -10f));
+					AudioSource.PlayClipAtPoint(AudioWorng, new Vector3(0f, 0f, -10f),0.4f);
 					Reseted = true;
 					StartCoroutine(ShowLose());
 					break;
 				case 2:
-					AudioSource.PlayClipAtPoint(AudioCorrect, new Vector3(0f, 0f, -10f));
+					AudioSource.PlayClipAtPoint(AudioCorrect, new Vector3(0f, 0f, -10f),0.2f);
 					gameObject.SendMessage("Win");
 					break;
 				case 3:
-					AudioSource.PlayClipAtPoint(AudioWorng, new Vector3(0f, 0f, -10f));
+					AudioSource.PlayClipAtPoint(AudioWorng, new Vector3(0f, 0f, -10f),0.4f);
 					Reseted = true;
 					StartCoroutine(ShowLose());
 					break;
@@ -95,15 +95,15 @@ public class Sheep : MonoBehaviour {
 		} else {
 			switch (i) {
 				case 1:
-					AudioSource.PlayClipAtPoint(AudioWorng, new Vector3(0f, 0f, -10f));
+					AudioSource.PlayClipAtPoint(AudioWorng, new Vector3(0f, 0f, -10f),0.4f);
 					SheepCorrect.SetActive(true);
 					break;
 				case 2:
-					AudioSource.PlayClipAtPoint(AudioWorng, new Vector3(0f, 0f, -10f));
+					AudioSource.PlayClipAtPoint(AudioWorng, new Vector3(0f, 0f, -10f),0.4f);
 					SheepCorrect.SetActive(true);
 					break;
 				case 3:
-					AudioSource.PlayClipAtPoint(AudioCorrect, new Vector3(0f, 0f, -10f));
+					AudioSource.PlayClipAtPoint(AudioCorrect, new Vector3(0f, 0f, -10f),0.2f);
 					gameObject.SendMessage("Win");
 					break;
 			}

@@ -30,14 +30,14 @@ public class Panda : MonoBehaviour {
 			switch (choice) {
 				case 1:
 				case 2:
-					AudioSource.PlayClipAtPoint(WrongAudio, new Vector3(0f, 0f, -10f));
+					AudioSource.PlayClipAtPoint(WrongAudio, new Vector3(0f, 0f, -10f),0.4f);
 					RedFrame[0].SetActive(true);
 					break;
 				case 3:
 					LetterObj[0].GetComponent<Image>().sprite = LetterImg[0];
 					RedFrame[0].SetActive(false);
 					CorrectAnswer[0].SetActive(true);
-					AudioSource.PlayClipAtPoint(CorrectAudio, new Vector3(0f, 0f, -10f));
+					AudioSource.PlayClipAtPoint(CorrectAudio, new Vector3(0f, 0f, -10f),0.2f);
 					quizNumber++;
 					WaitInput = false;
 					StartCoroutine(StoryForQuiz2());
@@ -47,7 +47,7 @@ public class Panda : MonoBehaviour {
 			switch (choice) {
 				case 1:
 					LetterObj[1].GetComponent<Image>().sprite = LetterImg[1];
-					AudioSource.PlayClipAtPoint(CorrectAudio, new Vector3(0f, 0f, -10f));
+					AudioSource.PlayClipAtPoint(CorrectAudio, new Vector3(0f, 0f, -10f),0.2f);
 					RedFrame[1].SetActive(false);
 					CorrectAnswer[1].SetActive(true);
 					WaitInput = false;
@@ -55,7 +55,7 @@ public class Panda : MonoBehaviour {
 					break;
 				case 2:
 				case 3:
-					AudioSource.PlayClipAtPoint(WrongAudio, new Vector3(0f, 0f, -10f));
+					AudioSource.PlayClipAtPoint(WrongAudio, new Vector3(0f, 0f, -10f),0.4f);
 					RedFrame[1].SetActive(true);
 					break;
 			}

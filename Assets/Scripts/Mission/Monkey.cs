@@ -16,13 +16,13 @@ public class Monkey : MonoBehaviour {
 
 	public void ClickInput(int i) {
 		if (currentStep == i) {
-			AudioSource.PlayClipAtPoint(CorrectAudio, new Vector3(0f, 0f, -10f));
+			AudioSource.PlayClipAtPoint(CorrectAudio, new Vector3(0f, 0f, -10f),0.2f);
 			HintStep[currentStep-1].SetActive(false);
 			InputStep[i-1].SetActive(false);
 			AnswerStep[i-1].SetActive(true);
 			currentStep++;
 		} else {
-			AudioSource.PlayClipAtPoint(WrongAudio, new Vector3(0f, 0f, -10f));
+			AudioSource.PlayClipAtPoint(WrongAudio, new Vector3(0f, 0f, -10f),0.4f);
 			HintStep[currentStep-1].SetActive(true);
 		}
 		if (currentStep == 4) {

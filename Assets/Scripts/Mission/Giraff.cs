@@ -10,7 +10,7 @@ public class Giraff : MonoBehaviour {
 
 	public void InputClickTail() {
 		if (!tailClick) {
-			AudioSource.PlayClipAtPoint(AudioCorrect, new Vector3(0f, 0f, -10f));
+			AudioSource.PlayClipAtPoint(AudioCorrect, new Vector3(0f, 0f, -10f),0.2f);
 			tail.GetComponent<Image>().color = new Color(1, 1, 1, 1);
 			tailClick = true;
 			tailHint.SetActive(false);
@@ -19,7 +19,7 @@ public class Giraff : MonoBehaviour {
 	}
 	public void InputClickLeg() {
 		if (!legClick) {
-			AudioSource.PlayClipAtPoint(AudioCorrect, new Vector3(0f, 0f, -10f));
+			AudioSource.PlayClipAtPoint(AudioCorrect, new Vector3(0f, 0f, -10f),0.2f);
 			leg.GetComponent<Image>().color = new Color(1, 1, 1, 1);
 			legClick = true;
 			legHint.SetActive(false);
@@ -27,7 +27,7 @@ public class Giraff : MonoBehaviour {
 		WinCondition();
 	}
 	public void WrongClick() {
-		AudioSource.PlayClipAtPoint(AudioWrong, new Vector3(0f, 0f, -10f));
+		AudioSource.PlayClipAtPoint(AudioWrong, new Vector3(0f, 0f, -10f),0.4f);
 		if (!legClick) {
 			legHint.SetActive(true);
 		} else {
