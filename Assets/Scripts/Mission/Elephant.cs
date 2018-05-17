@@ -39,7 +39,7 @@ public class Elephant : MonoBehaviour {
 		yield return new WaitForSeconds(0.5f);
 		for (int i = 0; i < AnimalVoice.Length; i++) {
 			AnimalObj[i].GetComponent<Image>().sprite = AnimalSprite[i * 2 + 1];
-			AudioSource.PlayClipAtPoint(AnimalVoice[i], gameObject.transform.position);
+			AudioSource.PlayClipAtPoint(AnimalVoice[i], gameObject.transform.position, 0.4f);
 			yield return new WaitForSeconds(AnimalVoice[i].length);
 			AnimalObj[i].GetComponent<Image>().sprite = AnimalSprite[i * 2];
 		}
