@@ -1,7 +1,7 @@
 
 # Helper
 
-Bubble Puzzle game with basic logic by monogame.
+Learning Games project for Kids.
 
 ## Screen Shot
 
