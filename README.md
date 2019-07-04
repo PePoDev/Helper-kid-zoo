@@ -10,7 +10,3 @@ Learning Games project for Kids.
 ![GamePlay Screen](Screenshot/02.png)
 
 ![Map Screen](Screenshot/02.png)
-
-## Meta
-
-My name is [@PePoDev](https://fb.com/pepo.dev) – support@pepodev.com
